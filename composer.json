@@ -1,0 +1,28 @@
+{
+    "name": "tatiana5/CategoriesInTabs",
+    "type": "phpbb-extension",
+    "description": "",
+    "homepage": "http://phpbbguru.net",
+    "version": "0.0.1",
+    "time": "2014-02-03",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Татьяна5",
+            "homepage": "http://phpbbguru.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpbb/epv": "dev-master"
+    },
+    "extra": {
+        "display-name": "Categories in tabs",
+        "soft-require": {
+           "phpbb/phpbb": "3.1.*@dev"
+        }
+    }
+}
