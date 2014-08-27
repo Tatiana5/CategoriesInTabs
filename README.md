@@ -13,7 +13,6 @@ You can install this on the latest copy of the develop branch ([phpBB 3.1-dev](h
 4. Copy the `CategoriesInTabs` folder to `phpBB/ext/tatiana5/` (if done correctly, you'll have the main extension class at (your forum root)/ext/tatiana5/CategoriesInTabs/composer.json).
 5. Navigate in the ACP to `Customise -> Manage extensions`.
 6. Look for `CategoriesInTabs` under the Disabled Extensions list, and click its `Enable` link.
-7. Configure CategoriesInTabs by navigating in the ACP to `Extensions` -> `CategoriesInTabs`.
 
 ## Uninstall
 
