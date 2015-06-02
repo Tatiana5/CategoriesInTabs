@@ -1,9 +1,9 @@
 #categories  .tab > a {
-	background-color: #E8ECEE;
+	background-color: #c6c7cb;
 }
 
 #categories  .tab > a:hover {
-	background-color: #b0b7bd;
+	background-color: #89939c;
 	color: #fff;
 }
 
