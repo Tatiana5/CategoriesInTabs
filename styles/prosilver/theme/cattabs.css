@@ -1,7 +1,3 @@
-#categories  .tab > a {
-	background-color: #80AED5;
-}
-
 #categories  .tab > a:hover {
 	background-color: #57A5E8;
 	color: #fff;

@@ -1,0 +1,22 @@
+#categories  .tab > a:hover {
+	background-color: #97c34e;
+	border-color: #a6cc67;
+	color: #fff;
+}
+
+#categories .activetab > a,
+#categories .activetab > a:hover {
+	background: #6baa03;
+	background: -moz-linear-gradient(top, #97c34e 0%, #6baa03 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #97c34e), color-stop(100%, #6baa03));
+	background: -webkit-linear-gradient(top, #97c34e 0%, #6baa03 100%);
+	background: -o-linear-gradient(top, #97c34e 0%, #6baa03 100%);
+	background: -ms-linear-gradient(top, #97c34e 0%, #6baa03 100%);
+	background: linear-gradient(to bottom, #97c34e 0%, #6baa03 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c34e', endColorstr='#6baa03', GradientType=0 );
+	border-color: #6baa03;
+	box-shadow: 0 1px 1px #F2F9FF inset;
+	color: #fff;
+	padding-bottom: 8px;
+	margin-bottom: -1px;
+}
