@@ -1,0 +1,25 @@
+#categories  .tab > a {
+	background-color: #dfe9f7;
+}
+
+#categories  .tab > a:hover {
+	background-color: #CBDAF6;
+	color: #536482;
+}
+
+#categories .activetab > a,
+#categories .activetab > a:hover {
+	background: #a5c0f3;
+	background: -moz-linear-gradient(top, #ecf0f9 0%, #a5c0f3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ecf0f9), color-stop(100%, #a5c0f3));
+	background: -webkit-linear-gradient(top, #ecf0f9 0%, #a5c0f3 100%);
+	background: -o-linear-gradient(top, #ecf0f9 0%, #a5c0f3 100%);
+	background: -ms-linear-gradient(top, #ecf0f9 0%, #a5c0f3 100%);
+	background: linear-gradient(to bottom, #ecf0f9 0%, #a5c0f3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf0f9', endColorstr='#a5c0f3', GradientType=0 );
+	border-color: #a9b8c2;
+	box-shadow: 0 1px 1px #F2F9FF inset;
+	color: #536482;
+	padding-bottom: 8px;
+	margin-bottom: -1px;
+}

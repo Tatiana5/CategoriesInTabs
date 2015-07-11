@@ -1,0 +1,18 @@
+<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT  -->
+<script type="text/javascript">
+// <![CDATA[
+	var cattab_help = document.getElementById('cattab-help-{forumrow.FORUM_ID}');
+	var cattab = nextTag(cattab_help);
+	var tabs = document.getElementById('tabs');
+	cattab.id = 'cattab-{forumrow.FORUM_ID}';
+	panels.push('cattab-{forumrow.FORUM_ID}');
+    addcattab('cattab-{forumrow.FORUM_ID}', '<!-- IF forumrow.S_IS_CAT -->{forumrow.FORUM_NAME}<!-- ELSE -->{L_FORUM}<!-- ENDIF -->');
+	
+	if(localStorage['IndexCatId'] == null) {
+		var first_cat = nextTag(tabs);
+		localStorage['IndexCatId'] = first_cat.getAttribute('id').replace(/help-/, '');
+	}
+	tabs.setAttribute('data-show-panel', localStorage['IndexCatId']);
+// ]]>
+</script>
+<!-- ENDIF -->
