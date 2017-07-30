@@ -1,0 +1,15 @@
+<script>
+$('.cattab').on('click', function(e) {
+	e.preventDefault();
+	localStorage['IndexCatId'] = $(this).attr('data-subpanel');
+});
+
+$(document).ready(function() {
+	$('[id^="cattab-help-"').each(function() {
+		var tabId = $(this).attr('id').replace('help-', '');
+		if ($('#' + tabId).find('dl.forum_unread').length > 0 || $('#' + tabId).find('dl.forum_unread_subforum').length > 0) {
+			$('#' + tabId + '-tab .cattab').addClass('unreadtab');
+		}
+	});
+});
+</script>
