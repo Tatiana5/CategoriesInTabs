@@ -1,0 +1,24 @@
+#categories  .tab > a {
+	color: #000;
+}
+#categories  .tab > a:hover {
+	background-color: #FFA500;
+	color: #000;
+}
+
+#categories .activetab > a,
+#categories .activetab > a:hover {
+	background: #FFA500;
+	background: -moz-linear-gradient(top, #F3B953 0%, #FFA500 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F3B953), color-stop(100%, #FFA500));
+	background: -webkit-linear-gradient(top, #F3B953 0%, #FFA500 100%);
+	background: -o-linear-gradient(top, #F3B953 0%, #FFA500 100%);
+	background: -ms-linear-gradient(top, #F3B953 0%, #FFA500 100%);
+	background: linear-gradient(to bottom, #F3B953 0%, #FFA500 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3B953', endColorstr='#FFA500', GradientType=0 );
+	border-color: #FFA500;
+	box-shadow: 0 1px 1px #F2F9FF inset;
+	color: #000;
+	padding-bottom: 8px;
+	margin-bottom: -1px;
+}

@@ -8,28 +8,24 @@
 		var _li = document.createElement('li');
 		_li.id = tab_id;
 		_li.className = 'tab';
-		_li.innerHTML = '<a href="' + "#tabs" + '" class="cattab" data-subpanel="' + id + '" role="tab" aria-controls="' + id + '"><span>' + text + "</span></a>";
+		_li.innerHTML = '<a href="' + "#tabs" + '" onclick="' + "localStorage['IndexCatId'] = '" + id + "'; return false;" + '" data-subpanel="' + id + '" role="tab" aria-controls="' + id + '"><span>' + text + "</span></a>";
 		ccc.appendChild(_li);
 	}
-
 	function is_in_array(elem, array)
 	{
-		for (var i = 0, length = array.length; i < length; i++) {
+		for (var i = 0, length = array.length; i < length; i++)
 			// === is correct (IE)
-			if (array[i] === elem) {
+			if (array[i] === elem)
 				return i;
-			}
-		}
 
 		return -1;
 	}
-
 	function nextTag(node) { 
 		var node = node.nextSibling; 
-		return (node && node.nodeType != 1) ? nextTag(node) : node; 
+		return (node && node.nodeType!=1) ? nextTag(node) : node; 
 	}
 	// ]]>
 </script>
 <div id="tabs" class="sub-panels" role="tablist">
-	<ul id="categories" class="tabs"></ul>
+	<ul id="categories"></ul>
 </div>
