@@ -6,7 +6,7 @@
 	var tabs = document.getElementById('tabs');
 	cattab.id = 'cattab-{forumrow.FORUM_ID}';
 	panels.push('cattab-{forumrow.FORUM_ID}');
-    addcattab('cattab-{forumrow.FORUM_ID}', '<!-- IF forumrow.S_IS_CAT and forumrow.FORUM_IMAGE --><span class="catimg">{forumrow.FORUM_IMAGE}</span> <!-- ENDIF --><!-- IF forumrow.S_IS_CAT -->{forumrow.FORUM_NAME}<!-- ELSE -->{L_FORUM}<!-- ENDIF -->');
+    addcattab('cattab-{forumrow.FORUM_ID}', '<!-- IF forumrow.S_IS_CAT and forumrow.FORUM_IMAGE --><span class="catimg">{forumrow.FORUM_IMAGE}</span> <!-- ENDIF --><!-- IF forumrow.S_IS_CAT -->{forumrow.FORUM_NAME}<!-- ELSE -->{L_FORUM}<!-- ENDIF -->', <!-- IF forumrow.FORUM_DESC -->"{forumrow.FORUM_DESC}"<!-- ELSE -->""<!-- ENDIF -->);
 	
 	if(localStorage['IndexCatId'] == null) {
 		var first_cat = nextTag(tabs);

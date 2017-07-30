@@ -1,14 +1,17 @@
 <script type="text/javascript">
 	// <![CDATA[
 	var panels = new Array();
-	function addcattab(id, text)
+	function addcattab(id, text, title)
 	{
 		var ccc = document.getElementById('categories');
 		var tab_id = id + '-tab';
+		var tab_title = (title) ? (' title="' + title  + '"') : '';
+		console.log(tab_title);
 		var _li = document.createElement('li');
 		_li.id = tab_id;
 		_li.className = 'tab';
-		_li.innerHTML = '<a href="' + "#tabs" + '" class="cattab" data-subpanel="' + id + '" role="tab" aria-controls="' + id + '"><span>' + text + "</span></a>";
+		_li.innerHTML = '<a href="' + "#tabs" + '" class="cattab" data-subpanel="' + id + '" role="tab" aria-controls="' + id + '"' + tab_title + '><span>' + text + "</span></a>";
+		console.log(_li.innerHTML);
 		ccc.appendChild(_li);
 	}
 
