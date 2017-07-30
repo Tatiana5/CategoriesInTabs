@@ -45,7 +45,6 @@ env:
 
   only:
     - master
-    - styles-3.1
     - develop
     - /^develop-.*$/
     - /^\d+(\.\d+)?\.x$/
